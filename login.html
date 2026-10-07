@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão Anala - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER / MENU FIXO -->
+    <header id="main-header">
+        <div class="header-container">
+            <div class="brand">
+                <h1>Salão Anala</h1>
+                <span class="tagline">Seu momento de brilhar e se cuidar!</span>
+            </div>
+
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link active">Login</a>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link submenu-toggle" id="btn-sobre">Sobre ▾</a>
+                        <ul class="submenu" id="submenu-sobre">
+                            <li><a href="index.html#empresa" class="submenu-link">Empresa</a></li>
+                            <li><a href="index.html#clientes" class="submenu-link">Clientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link submenu-toggle" id="btn-contato">Contato ▾</a>
+                        <ul class="submenu" id="submenu-contato">
+                            <li><a href="index.html#telefones" class="submenu-link">Telefones</a></li>
+                            <li><a href="index.html#email" class="submenu-link">Email</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (MAIN) -->
+    <main id="main-content">
+        <section class="form-container">
+            <h1 class="main-title">Acesse sua Conta</h1>
+            <p class="main-description">Insira seus dados para gerenciar seus agendamentos.</p>
+
+            <form id="formLogin">
+                <div class="form-group">
+                    <label for="email-login">E-mail</label>
+                    <input type="email" id="email-login" name="email" placeholder="seuemail@exemplo.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha-login">Senha</label>
+                    <input type="password" id="senha-login" name="senha" placeholder="Sua senha" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+
+            <p style="margin-top: 15px; text-align: center;">
+                Ainda não tem conta? <a href="cadastro.html" style="color: #d81b60; font-weight: bold;">Cadastre-se</a>
+            </p>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer id="main-footer">
+        <div class="footer-container">
+            <p><span id="current-date"></span> — Todos os direitos reservados. Salão Anala.</p>
+            <p class="devs">Alunos Desenvolvedores: Nome do Aluno 1, Nome do Aluno 2, Nome do Aluno 3</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

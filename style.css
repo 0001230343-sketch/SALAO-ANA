@@ -1,0 +1,255 @@
+/* ==========================================================================
+   1. RESET E CONFIGURAÇÕES DO BODY (Fundo Hello Kitty Rosa)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #4a1525;
+    line-height: 1.6;
+    
+    /* Fundo Temático Rosa com Imagem da Hello Kitty */
+    background: linear-gradient(rgba(255, 240, 245, 0.85), rgba(255, 240, 245, 0.85)),
+                url('https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcR0kwEVVfbafMCP8lWcQRqBcpwub8QaYOZ23l4CEl1OXFR58AE6Hn_0cZXO9DuEJfrZnRidzPEoZnBOafU') repeat center center;
+    background-size: 300px;
+    background-attachment: fixed;
+}
+
+/* ==========================================================================
+   2. ESTILIZAÇÃO DO HEADER (Cabeçalho / Menu Fixo)
+   ========================================================================== */
+header#main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #d81b60; /* Rosa Choque Elegante */
+    box-shadow: 0 4px 12px rgba(216, 27, 96, 0.3);
+    z-index: 1000;
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.teste {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    min-width: 150px;
+    padding: 6px 0;
+    list-style: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(216, 27, 96, 0.25);
+}
+
+.empresa-info {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    z-index: 1100;
+    width: min(320px, calc(100vw - 40px));
+    padding: 16px 20px;
+    list-style: none;
+    color: #880e4f;
+    background-color: #ffffff;
+    border: 2px solid #ff80ab;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(216, 27, 96, 0.3);
+}
+
+.empresa-info[hidden] {
+    display: none;
+}
+
+.teste.active {
+    display: block;
+}
+
+.submenu-link {
+    display: block;
+    padding: 8px 16px;
+    color: #880e4f;
+    text-decoration: none;
+}
+
+.submenu-link:hover {
+    background-color: #fce4ec;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.brand h1 {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.tagline {
+    color: #fce4ec;
+    font-size: 0.85rem;
+}
+
+/* Navegação e Links do Menu */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-link {
+    display: block;
+    padding: 10px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all 0.25s ease-in-out;
+}
+
+/* Interatividades do Menu */
+.nav-link:hover {
+    background-color: #ff80ab; /* Muda de cor ao passar o mouse */
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.nav-link:active {
+    background-color: #c2185b; /* Efeito visual nítido ao clicar */
+    transform: translateY(0);
+}
+
+.nav-link:focus {
+    outline: 3px solid #ffffff; /* Destaque ao focar via teclado */
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   3. ESTILIZAÇÃO DO MAIN (Conteúdo Principal)
+   ========================================================================== */
+main#main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 20px 60px 20px;
+}
+
+.hero-section {
+    max-width: 750px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid #ff80ab;
+    box-shadow: 0 8px 24px rgba(216, 27, 96, 0.15);
+}
+
+.main-title {
+    font-size: 2.2rem;
+    color: #880e4f;
+    margin-bottom: 15px;
+}
+
+.main-description {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #4a1525;
+}
+
+/* Estilização para Campos de Formulários e Foco */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border: 2px solid #f8bbd0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.25s ease;
+}
+
+/* Interatividade FOCUS em Campos de Entrada */
+input:focus, select:focus, textarea:focus {
+    border-color: #d81b60;
+    outline: none;
+    box-shadow: 0 0 8px rgba(216, 27, 96, 0.4);
+    background-color: #fff8fa;
+}
+
+/* ==========================================================================
+   4. PADRONIZAÇÃO DE BOTÕES (Idênticos em Todas as Páginas)
+   ========================================================================== */
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 4px 10px rgba(216, 27, 96, 0.25);
+}
+
+.btn-primary {
+    background-color: #d81b60;
+    color: #ffffff;
+}
+
+/* Interatividade HOVER (Ao passar o mouse) */
+.btn-primary:hover {
+    background-color: #ff4081;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 64, 129, 0.4);
+}
+
+/* Interatividade ACTIVE (Ao clicar no botão) */
+.btn-primary:active {
+    background-color: #ad1457;
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(173, 20, 87, 0.4);
+}
+
+/* Interatividade FOCUS (Ao focar com Tab / Teclado) */
+.btn-primary:focus {
+    outline: 3px solid #880e4f;
+    outline-offset: 3px;
+}
+
+/* ==========================================================================
+   5. ESTILIZAÇÃO DO FOOTER (Rodapé)
+   ========================================================================== */
+footer#main-footer {
+    background-color: #880e4f;
+    color: #fce4ec;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    border-top: 3px solid #ff80ab;
+    margin-top: auto;
+}
+
+.footer-container p {
+    margin: 4px 0;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão Anala - Cadastro 🌸</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-container">
+        <h2>👑 Criar Sua Conta 💅✨</h2>
+        <p class="auth-subtitle">Cadastre-se para agendar seus horários de <strong>Segunda a Sexta</strong>! 💋🎀</p>
+
+        <form id="cadastroForm">
+            <div class="form-group">
+                <label for="nome">Nome Completo 👤🌸</label>
+                <input type="text" id="nome" placeholder="Seu lindo nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="emailCadastro">E-mail (Gmail) ✉️💖</label>
+                <input type="email" id="emailCadastro" placeholder="seuemail@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="idade">Idade 🎂✨</label>
+                <input type="number" id="idade" placeholder="Sua idade" min="12" max="100" required>
+            </div>
+
+            <div class="form-group">
+                <label for="senhaCadastro">Senha 🔒✨</label>
+                <input type="password" id="senhaCadastro" placeholder="Crie uma senha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmarSenha">Confirmar Senha 🔑💖</label>
+                <input type="password" id="confirmarSenha" placeholder="Confirme sua senha" required>
+            </div>
+
+            <button type="submit" class="btn-auth">Criar Conta 🎉💋</button>
+        </form>
+
+        <p class="auth-footer">
+            Já possui uma conta? <a href="login.html">Faça login 💋</a>
+        </p>
+        <p class="auth-footer">
+            <a href="index.html">← Voltar para a página inicial 🏠</a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

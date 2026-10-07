@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salão Anala - Cadastro 🎀✨</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos Globais e Fundo */
+        body.auth-page {
+            background-color: #f7d2df;
+            background-image: url('https://lh3.googleusercontent.com/rd-gg-dl/AHiVA1mfdcw-5eyl7tRBEMt7IzSYgQTUioU6pBr3plh4ar5F5r1ieCjc9Y630GV8vsiCUb28GI2e882c9HLcMr4bfKblxj9nkznK6w9GpJer5NsGAqh23yUvfcnWtfE7mrnoIY1pV6mnir1wpDJQiiAIpzP2yLiE75WjsUPQ3qKZY7X1ngCKwdLQxjskh5UcmLUfHys1KDSMKY5Lun8Lpyb_U8EtQu-hfxQASwl20jpR0ZT7Wn95BCsdP21x6-8AOTV6a4dJyIpQoGeERePWQ1RIj9gTOyCAriFH9HTCevV_cMqmrMLFeWAUuSIWdtC0W-hT2XsS109JQVeyU5WsNFLIohTZ7Pj1euhwJUnS3nJj8wPj2hMPPqYvqoGbherVTMxEzjWg0X1XBaz_iWZejyCr8sovytTowmeYp4nEN3h7nhevz2dqqjPrupirficEVcAJbAU-z-dRws5bl-O7XiPkuBbGudKfI3qnu_p0K0CwpFDN0zTS4ZOOv2bG8FLTHUo64FnGEggvv8TeACDVYS7GsU_brwl8czjANeSHaRgcn3K2htlqiI4bRxPCJVaQa1XiNaj0oo_R1TFjLKea_1g9kbUQ3zNF-2wNnlCXVMrdw1zh-Ox5Uxd_Gn7xAWG-oPl24iGhdnz0NpfXcrgOBunYfp4xYypoDPm-uYttB9xVPw_q3vO9nG27dmmkAsAPe0Od7t04K2cBAmcWHL6h_lVIuC_LmWmGhiRFWpe4vhgtQ4C7iPQraH1High-oqbPxD8kZCcVVxvFjW2QzFC8Ayj9VkVNHfMn5Idn47sHbMFQ5j2YhYuRu5bk1EpSb33uHFaMsbQxWx3N4N_Y8sNC9kBvfHuZUl24NL9IZZlYf5AeU-oOVtHdBLeeBjYJOEFO3TZyVEBM8wSKXaQZkaOHWausQNdMYwLKV6XmcctOVKo81AcRcp7GnDT-yj4l_TeNbFfnkUbCEVVK6_ivrCIAsrKuyUP8h93cUhjtV3ZzJamqGwfflLVwwoz8bIxkvfOpPG8g3m-2urHBkpAWgEtSQa0LALqkBCawHJ5kadpLjdoGo5-G8wL8gOngsTCubGxZ9a1HjUVbBrl7j8qpgSYwda4O286l1IdUppzAo9LYR0RFGxsCK5e-gYgA0X1eCNGO3Ys4bxrCEKFhydAFB2rdqvVgMciZrzJFLOZVUSlEmgeYUO7tglX9Rpb2Y5onpwKCjFLMNGXjYqQblSIw2OnZjBjjOrmzh_JmMFkXpFkkGv63Dm7YclfMe0S1owR4jhEKWHzYj8Us=s1024-rj');
+            background-repeat: repeat;
+            background-size: 350px;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding-top: 100px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Menu Fixo (<header>) */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-bottom: 3px solid #ff80ab;
+            box-shadow: 0 4px 10px rgba(219, 112, 147, 0.2);
+            z-index: 1000;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 18pxss
